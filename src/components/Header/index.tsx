@@ -21,12 +21,12 @@ const Header = () => {
     },
   ];
   return (
-    <div className='px-9 flex justify-between items-center mb-[111px]'>
+    <div className='md:px-9 px-2v flex justify-between items-center mb-[111px]'>
       <div>
-        <img src={logo} className='h-[119px] w-[272px]'></img>
+        <img src={logo} className='md:h-[119px] md:w-[272px] w-[160px]'></img>
       </div>
       <div className='flex gap-5 items-center'>
-        <div className='flex gap-[34px]'>
+        <div className='flex gap-[34px] md:block hidden'>
           {listMenu?.map((i) => (
             <div
               key={i?.name}

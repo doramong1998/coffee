@@ -30,16 +30,16 @@ const Logos = () => {
   ];
   return (
     <div className='mb-[150px]'>
-      <div className='m-auto w-[1640px] mb-4'>
-        <div className='flex gap-[14px]'>
+      <div className='m-auto max-w-[1640px] mb-4 2xl:p-0 xl:p-4'>
+        <div className='md:flex gap-[14px]'>
           {listImages?.map((i) => (
             <div>
-              <img src={i?.image}></img>
+              <img src={i?.image} className="md:m-0 m-auto"></img>
             </div>
           ))}
         </div>
       </div>
-      <div className='m-auto w-[530px]'>
+      <div className='m-auto md:w-[530px] w-[390px]'>
         <div className='text-center font-semibold text-[30px] capitalize text-saddle_brown-950 leading-[40px] tracking-[3px] mb-4'>
           News as fresh as our coffee
         </div>

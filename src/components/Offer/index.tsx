@@ -39,7 +39,7 @@ const Offer = () => {
 
   return (
     <div className='mb-[150px]'>
-      <div className='m-auto w-[1334px] mb-[70px]'>
+      <div className='m-auto max-w-[1334px] mb-[70px]'>
         <div className='mb-9'>
           <div className='text-center font-semibold text-[30px] capitalize text-saddle_brown-950 leading-[40px] tracking-[3px] mb-4'>
             What we offer
@@ -49,9 +49,9 @@ const Offer = () => {
             arrange fill horizontal connection.
           </div>
         </div>
-        <div className='flex gap-[90px] justify-center'>
+        <div className='md:flex xl:gap-[90px] gap-[36px] justify-center'>
           {listContent?.map((i) => (
-            <div className='w-[266px]'>
+            <div className='w-[266px] md:m-0 m-auto mb-6'>
               <div className='h-[126px] mb-4 relative'>
                 <img
                   src={i?.image}
@@ -69,12 +69,12 @@ const Offer = () => {
           ))}
         </div>
       </div>
-      <div className='m-auto w-[1420px] rounded-[20px] bg-gold_sand-300 h-[710px]'>
+      <div className='md:block hidden m-auto 2xl:w-[1420px] xl:w-[1300px] rounded-[20px] bg-gold_sand-300 xl:h-[710px] h-[512px]'>
         <div className='flex'>
-          <div className='w-[355px] h-[355px]'>
+          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px]'>
             <img src={offerList1}></img>
           </div>
-          <div className='w-[355px] h-[355px] flex justify-center'>
+          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px] flex justify-center'>
             <div className='m-auto'>
               <div className='text-saddle_brown-950 text-[22px] leading-[33px] font-medium mb-[18px]'>
                 RESERVATIONS
@@ -90,11 +90,11 @@ const Offer = () => {
               </div>
             </div>
           </div>
-          <div className='w-[355px] h-[355px]'>
+          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px]'>
             {' '}
             <img src={offerList2}></img>
           </div>
-          <div className='w-[355px] h-[355px] flex justify-center'>
+          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px] flex justify-center'>
             <div className='m-auto'>
               <div className='text-saddle_brown-950 text-[22px] leading-[33px] font-medium mb-[18px]'>
                 RESERVATIONS
@@ -112,7 +112,7 @@ const Offer = () => {
           </div>
         </div>
         <div className='flex'>
-          <div className='w-[355px] h-[355px] flex justify-center'>
+          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px] flex justify-center'>
             <div className='m-auto'>
               <div className='text-saddle_brown-950 text-[22px] leading-[33px] font-medium mb-[18px]'>
                 RESERVATIONS
@@ -128,10 +128,10 @@ const Offer = () => {
               </div>
             </div>
           </div>
-          <div className='w-[355px] h-[355px]'>
+          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px]'>
             <img src={offerList3}></img>
           </div>
-          <div className='w-[355px] h-[355px] flex justify-center'>
+          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px] flex justify-center'>
             <div className='m-auto'>
               <div className='text-saddle_brown-950 text-[22px] leading-[33px] font-medium mb-[18px]'>
                 RESERVATIONS
@@ -147,7 +147,7 @@ const Offer = () => {
               </div>
             </div>
           </div>
-          <div className='w-[355px] h-[355px]'>
+          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px]'>
             {' '}
             <img src={offerList4}></img>
           </div>

@@ -11,9 +11,9 @@ import message from '../../assets/messenger.svg';
 const Footer = () => {
   return (
     <div className='w-full bg-muddy-400 py-[110px]'>
-      <div className='m-auto w-[1403px] mb-4'>
-        <div className='flex gap-[93px] justify-between align-middle'>
-          <div>
+      <div className='m-auto max-w-[1403px] mb-4 2xl:p-0 p-4'>
+        <div className='md:flex 2xl:gap-[93px] xl:gap-[40px] justify-between align-middle'>
+          <div className="md:mb-0 mb-4">
             <div className='font-medium text-[22px] leading-[33px] text-saddle_brown-950 mb-4'>
               Contact
             </div>
@@ -27,7 +27,7 @@ const Footer = () => {
               Address: NY, Linn Dr 238
             </div>
           </div>
-          <div>
+          <div className="md:mb-0 mb-4">
             <div className='font-medium text-[22px] leading-[33px] text-saddle_brown-950 mb-4'>
               Locations
             </div>
@@ -41,11 +41,11 @@ const Footer = () => {
               LA, Halatio Ave 9
             </div>
           </div>
-          <div>
+          <div className='xl:block hidden'>
             <img src={footerLogo}></img>
           </div>
 
-          <div>
+          <div className="md:mb-0 mb-4">
             <div className='font-medium text-[22px] leading-[33px] text-saddle_brown-950 mb-4'>
               Information
             </div>
@@ -59,7 +59,7 @@ const Footer = () => {
               Reservations
             </div>
           </div>
-          <div>
+          <div className="md:mb-0 mb-4">
             <div className='font-medium text-[22px] leading-[33px] text-saddle_brown-950 mb-4'>
               Opening hours
             </div>

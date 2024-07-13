@@ -11,10 +11,24 @@ import { useRef } from 'react';
 const Customer = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 3,
     arrows: false,
+    slidesToShow: 3,
     speed: 500,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1536,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   let sliderRef: any = useRef(null);
   const next = () => {
@@ -24,14 +38,14 @@ const Customer = () => {
     sliderRef.slickPrev();
   };
   return (
-    <div className='flex relative mb-[150px]'>
-      <img src={cup2}></img>
+    <div className='md:flex relative mb-[150px] xl:p-0 p-4 '>
+      <img src={cup2} className='xl:block hidden'></img>
       <div>
         <div className='mt-[60px]'>
-          <div className='max-w-[364px] font-medium text-saddle_brown-950 text-[30px] leading-[45px] tracking-[3px] capitalize mb-4'>
+          <div className='w-[364px]  font-medium text-saddle_brown-950 text-[30px] leading-[45px] tracking-[3px] capitalize mb-4 '>
             What our Customer are saying
           </div>
-          <div className='text-black-950 text-[15px] leading-[22px] max-w-[498px] capitalize mb-4'>
+          <div className='text-black-950 text-[15px] leading-[22px] xl:max-w-[498px] max-w-[364px] capitalize mb-4'>
             Figma ipsum component variant main layer. Layout selection group
             blur arrow flows undo figma style. Star shadow flatten export select
             text pen.
@@ -50,7 +64,7 @@ const Customer = () => {
           </div>
         </div>
       </div>
-      <div className='w-[1036px]'>
+      <div className='2xl:w-[1036px] xl:w-[680px] md:w-[660px] w-[420px]'>
         <Slider
           {...settings}
           ref={(slider) => {
@@ -123,7 +137,7 @@ const Customer = () => {
           </div>
         </Slider>
       </div>
-      <div className='absolute top-0 right-[170px]'>
+      <div className='absolute top-0 2xl:right-[170px] xl:right-0 2xl:w-auto xl:w-[820px] xl:block hidden'>
         <img src={beans}></img>
       </div>
     </div>

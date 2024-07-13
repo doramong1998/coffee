@@ -23,7 +23,7 @@ const Freshly = () => {
 
   return (
     <div className='mb-[150px]'>
-      <div className='m-auto w-[1400px] mb-[70px]'>
+      <div className='m-auto max-w-[1400px] mb-[70px] 2xl:p-0 xl:p-4'>
         <div className='mb-9'>
           <div className='text-center font-semibold text-[30px] capitalize text-saddle_brown-950 leading-[40px] tracking-[3px] mb-4'>
             Made Freshly For You
@@ -33,9 +33,9 @@ const Freshly = () => {
             shadow opacity project object community rotate.
           </div>
         </div>
-        <div className='flex gap-[65px] justify-between'>
+        <div className='md:flex gap-[65px] justify-between xl:p-0 p-4'>
           {listContent?.map((i) => (
-            <div className='w-[426px]'>
+            <div className='md:w-[426px] w-[396px] md:mb-0 mb-4'>
               <div className='mb-5'>
                 <img src={i?.image}></img>
               </div>

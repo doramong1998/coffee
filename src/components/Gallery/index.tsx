@@ -41,7 +41,7 @@ const Gallery = () => {
   ];
   return (
     <div className='mb-[150px]'>
-      <div className='m-auto w-[1388px] flex gap-4'>
+      <div className='m-auto max-w-[1388px] flex gap-4 2xl:p-0 p-4'>
         {listImages?.map((i) => (
           <div
             onClick={() => setActive(i?.key)}

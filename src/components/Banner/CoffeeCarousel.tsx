@@ -15,6 +15,14 @@ const CoffeeCarousel = () => {
     centerPadding: '0px',
     speed: 500,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   const listProducts = [
@@ -38,7 +46,7 @@ const CoffeeCarousel = () => {
   ];
   return (
     <div className='bg-muddy-400 h-[282px] rounded-[50px] relative'>
-      <div className='absolute bottom-5 w-full px-[98px]'>
+      <div className='absolute bottom-5 w-full md:px-[98px] px-[64px]'>
         <Slider
           {...settings}
      
