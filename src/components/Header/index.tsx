@@ -26,7 +26,7 @@ const Header = () => {
         <img src={logo} className='md:h-[119px] md:w-[272px] w-[160px]'></img>
       </div>
       <div className='flex gap-5 items-center'>
-        <div className='flex gap-[34px] md:block hidden'>
+        <div className='md:flex gap-[34px] hidden'>
           {listMenu?.map((i) => (
             <div
               key={i?.name}
