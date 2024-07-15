@@ -69,12 +69,12 @@ const Offer = () => {
           ))}
         </div>
       </div>
-      <div className='md:block hidden m-auto 2xl:w-[1420px] xl:w-[1300px] rounded-[20px] bg-gold_sand-300 xl:h-[710px] h-[512px]'>
+      <div className='md:block hidden m-auto 2xl:w-[1420px] xl:w-[1300px] rounded-[20px] bg-gold_sand-300 xl:h-[650px] 2xl:h-[710px] h-[512px]'>
         <div className='flex'>
-          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px]'>
+          <div className='2xl:w-[355px] w-[256px] 2xl:h-[355px] h-[256px] xl:w-[325px] xl:h-[325px]'>
             <img src={offerList1}></img>
           </div>
-          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px] flex justify-center'>
+          <div className='2xl:w-[355px] w-[256px] 2xl:h-[355px] h-[256px] xl:w-[325px] xl:h-[325px] flex justify-center'>
             <div className='m-auto'>
               <div className='text-saddle_brown-950 text-[22px] leading-[33px] font-medium mb-[18px]'>
                 RESERVATIONS
@@ -90,11 +90,11 @@ const Offer = () => {
               </div>
             </div>
           </div>
-          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px]'>
+          <div className='2xl:w-[355px] w-[256px] 2xl:h-[355px] h-[256px] xl:w-[325px] xl:h-[325px]'>
             {' '}
             <img src={offerList2}></img>
           </div>
-          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px] flex justify-center'>
+          <div className='2xl:w-[355px] w-[256px] 2xl:h-[355px] h-[256px] flex justify-center xl:w-[325px] xl:h-[325px]'>
             <div className='m-auto'>
               <div className='text-saddle_brown-950 text-[22px] leading-[33px] font-medium mb-[18px]'>
                 RESERVATIONS
@@ -112,7 +112,7 @@ const Offer = () => {
           </div>
         </div>
         <div className='flex'>
-          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px] flex justify-center'>
+          <div className='2xl:w-[355px] w-[256px] 2xl:h-[355px] h-[256px] flex justify-center xl:w-[325px] xl:h-[325px]'>
             <div className='m-auto'>
               <div className='text-saddle_brown-950 text-[22px] leading-[33px] font-medium mb-[18px]'>
                 RESERVATIONS
@@ -128,10 +128,10 @@ const Offer = () => {
               </div>
             </div>
           </div>
-          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px]'>
+          <div className='2xl:w-[355px] w-[256px] 2xl:h-[355px] h-[256px] xl:w-[325px] xl:h-[325px]'>
             <img src={offerList3}></img>
           </div>
-          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px] flex justify-center'>
+          <div className='2xl:w-[355px] w-[256px] 2xl:h-[355px] h-[256px] flex justify-center xl:w-[325px] xl:h-[325px]'>
             <div className='m-auto'>
               <div className='text-saddle_brown-950 text-[22px] leading-[33px] font-medium mb-[18px]'>
                 RESERVATIONS
@@ -147,7 +147,7 @@ const Offer = () => {
               </div>
             </div>
           </div>
-          <div className='xl:w-[355px] w-[256px] xl:h-[355px] h-[256px]'>
+          <div className='2xl:w-[355px] w-[256px] 2xl:h-[355px] h-[256px] xl:w-[325px] xl:h-[325px]'>
             {' '}
             <img src={offerList4}></img>
           </div>

@@ -23,7 +23,7 @@ const Customer = () => {
         },
       },
       {
-        breakpoint: 1280,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },
@@ -64,14 +64,14 @@ const Customer = () => {
           </div>
         </div>
       </div>
-      <div className='2xl:w-[1036px] xl:w-[680px] md:w-[660px] w-[420px]'>
+      <div className='2xl:w-[1036px] xl:w-[680px] md:w-[660px] w-[360px]'>
         <Slider
           {...settings}
           ref={(slider) => {
             sliderRef = slider;
           }}
         >
-          <div className={`px-8 mt-16`}>
+          <div className={`md:px-8 px-2 mt-16`}>
             <div className='bg-gold_sand-300 px-5 py-8 rounded-[22px] max-w-[270px]'>
               <div className='mb-4'>
                 <img className='m-auto' src={avatar1}></img>
@@ -87,7 +87,7 @@ const Customer = () => {
               </div>
             </div>
           </div>
-          <div className={`px-8`}>
+          <div className={`md:px-8 px-2`}>
             <div className='bg-gold_sand-300 px-5 py-8 rounded-[22px] max-w-[270px]'>
               <div className='mb-4'>
                 <img className='m-auto' src={avatar2}></img>
@@ -103,7 +103,7 @@ const Customer = () => {
               </div>
             </div>
           </div>
-          <div className={`px-8 mt-32`}>
+          <div className={`md:px-8 px-2 mt-32`}>
             <div className='bg-gold_sand-300 px-5 py-8 rounded-[22px] max-w-[270px]'>
               <div className='mb-4'>
                 <img className='m-auto' src={avatar3}></img>
@@ -119,7 +119,7 @@ const Customer = () => {
               </div>
             </div>
           </div>
-          <div className={`px-8 mt-9`}>
+          <div className={`md:px-8 px-2 mt-9`}>
             <div className='bg-gold_sand-300 px-5 py-8 rounded-[22px] max-w-[270px]'>
               <div className='mb-4'>
                 <img className='m-auto' src={avatar1}></img>

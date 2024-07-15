@@ -11,7 +11,7 @@ import formMessage from '../../assets/form-message.svg';
 const Form = () => {
   return (
     <div className='mb-[150px]'>
-      <div className='m-auto max-w-[1344px] flex xl:justify-end relative 2xl:p-0 p-4'>
+      <div className='m-auto max-w-[1344px] flex md:justify-end relative 2xl:p-0 p-4'>
         <div className='md:absolute top-[188px] 2xl:left-0 left-4'>
           <div className=' font-semibold text-[30px] capitalize text-saddle_brown-950 leading-[40px] tracking-[3px] mb-4'>
             Book Your Table
@@ -20,7 +20,7 @@ const Form = () => {
             Figma ipsum component variant main layer.Figma ipsum component
             variant main layer.
           </div>
-          <div className='md:w-[641px] w-[390px]'>
+          <div className='md:w-[641px] w-[360px]'>
             <div className='md:flex gap-4 mb-4'>
               <div className='basis-1/2 md:mb-0 mb-4'>
                 <Input icon={formName} placeholder='Your Name' />

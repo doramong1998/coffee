@@ -33,9 +33,9 @@ const Freshly = () => {
             shadow opacity project object community rotate.
           </div>
         </div>
-        <div className='md:flex gap-[65px] justify-between xl:p-0 p-4'>
+        <div className='md:flex gap-[65px] justify-between xl:p-0 p-1'>
           {listContent?.map((i) => (
-            <div className='md:w-[426px] w-[396px] md:mb-0 mb-4'>
+            <div className='md:w-[426px] w-[380px] md:mb-0 mb-4'>
               <div className='mb-5'>
                 <img src={i?.image}></img>
               </div>
