@@ -10,16 +10,16 @@ import formMessage from '../../assets/form-message.svg';
 
 const Form = () => {
   return (
-    <div className='mb-[150px]'>
-      <div className='m-auto max-w-[1344px] flex md:justify-end relative 2xl:p-0 p-4'>
+    <section className='mb-[150px]'>
+      <div className='m-auto max-w-[1344px] flex md:justify-end relative '>
         <div className='md:absolute top-[188px] 2xl:left-0 left-4'>
-          <div className=' font-semibold text-[30px] capitalize text-saddle_brown-950 leading-[40px] tracking-[3px] mb-4'>
+          <h2 className=' font-semibold text-[30px] capitalize text-saddle_brown-950 leading-[40px] tracking-[3px] mb-4'>
             Book Your Table
-          </div>
-          <div className='max-w-[409px] capitalize text-black-950 text-[15px] leading-[22px] mb-4'>
+          </h2>
+          <h4 className='max-w-[409px] capitalize text-black-950 text-[15px] leading-[22px] mb-4'>
             Figma ipsum component variant main layer.Figma ipsum component
             variant main layer.
-          </div>
+          </h4>
           <div className='md:w-[641px] w-[360px]'>
             <div className='md:flex gap-4 mb-4'>
               <div className='basis-1/2 md:mb-0 mb-4'>
@@ -53,19 +53,19 @@ const Form = () => {
               />
             </div>
             <div className='w-full bg-muddy-400 rounded-[33px]  h-11 flex items-center justify-center cursor-pointer'>
-              <div className='flex items-center'>
+              <button className='flex items-center'>
                 <span className='text-saddle_brown-950 text-[15px]'>
                   Submit
                 </span>
-              </div>
+              </button>
             </div>
           </div>
         </div>
         <div>
-          <img src={coffeePoured} className="md:block hidden"></img>
+          <img src={coffeePoured} className='md:block hidden' alt='form'></img>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Form;

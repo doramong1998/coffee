@@ -8,13 +8,15 @@ import Form from './components/Form';
 import Gallery from './components/Gallery';
 import Logos from './components/Logos';
 import Footer from './components/Footer';
+import { useState } from 'react';
 
 function App() {
+  const [cart, setCart] = useState(0);
   return (
     <div className='bg-derby-100 w-full'>
-      <div className='max-w-[1920px]  m-auto min-h-screen pb-12'>
-        <Header />
-        <Banner />
+      <div className='max-w-[1920px]  m-auto min-h-screen pb-12  xl:p-0 p-4'>
+        <Header cart={cart} setCart={setCart} />
+        <Banner cart={cart} setCart={setCart} />
         <Steps />
         <Offer />
         <Customer />

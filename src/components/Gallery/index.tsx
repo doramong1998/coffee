@@ -40,8 +40,8 @@ const Gallery = () => {
     },
   ];
   return (
-    <div className='mb-[150px]'>
-      <div className='m-auto max-w-[1388px] flex gap-4 2xl:p-0 p-4'>
+    <section className='mb-[150px]'>
+      <div className='m-auto max-w-[1388px] flex gap-4'>
         {listImages?.map((i) => (
           <div
             onClick={() => setActive(i?.key)}
@@ -51,12 +51,13 @@ const Gallery = () => {
           >
             <img
               src={i?.image}
+              alt='gallery-image'
               className='w-full h-full object-cover rounded-[50px]'
             ></img>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 export default Gallery;

@@ -38,29 +38,33 @@ const Customer = () => {
     sliderRef.slickPrev();
   };
   return (
-    <div className='md:flex relative mb-[150px] xl:p-0 p-4 '>
+    <section className='md:flex relative mb-[150px]'>
       <img src={cup2} className='xl:block hidden'></img>
       <div>
         <div className='mt-[60px]'>
-          <div className='w-[364px]  font-medium text-saddle_brown-950 text-[30px] leading-[45px] tracking-[3px] capitalize mb-4 '>
+          <h2 className='w-[364px]  font-medium text-saddle_brown-950 text-[30px] leading-[45px] tracking-[3px] capitalize mb-4 '>
             What our Customer are saying
-          </div>
-          <div className='text-black-950 text-[15px] leading-[22px] xl:max-w-[498px] max-w-[364px] capitalize mb-4'>
+          </h2>
+          <h4 className='text-black-950 text-[15px] leading-[22px] xl:max-w-[498px] max-w-[364px] capitalize mb-4'>
             Figma ipsum component variant main layer. Layout selection group
             blur arrow flows undo figma style. Star shadow flatten export select
             text pen.
-          </div>
+          </h4>
           <div className='flex gap-4'>
-            <img
-              src={arrowLeft}
-              onClick={() => previous()}
-              className='cursor-pointer'
-            ></img>
-            <img
-              src={arrowRight}
-              onClick={() => next()}
-              className='cursor-pointer'
-            ></img>
+            <button>
+              <img
+                src={arrowLeft}
+                onClick={() => previous()}
+                className='cursor-pointer'
+              ></img>
+            </button>
+            <button>
+              <img
+                src={arrowRight}
+                onClick={() => next()}
+                className='cursor-pointer'
+              ></img>
+            </button>
           </div>
         </div>
       </div>
@@ -140,7 +144,7 @@ const Customer = () => {
       <div className='absolute top-0 2xl:right-[170px] xl:right-0 2xl:w-auto xl:w-[820px] xl:block hidden'>
         <img src={beans}></img>
       </div>
-    </div>
+    </section>
   );
 };
 export default Customer;

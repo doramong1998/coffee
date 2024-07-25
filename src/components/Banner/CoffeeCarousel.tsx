@@ -1,11 +1,10 @@
-
 import Slider from 'react-slick';
 import coffee1 from '../../assets/coffee1.svg';
 import coffee3 from '../../assets/coffee3.svg';
 import sliderRight from '../../assets/slider-right.svg';
 import sliderLeft from '../../assets/slider-left.svg';
 
-const CoffeeCarousel = () => {
+const CoffeeCarousel = ({ cart, setCart }: any) => {
   const settings = {
     centerMode: true,
     infinite: true,
@@ -47,11 +46,7 @@ const CoffeeCarousel = () => {
   return (
     <div className='bg-muddy-400 h-[282px] rounded-[50px] relative'>
       <div className='absolute bottom-5 w-full md:px-[98px] px-[64px]'>
-        <Slider
-          {...settings}
-     
-          className='custom-slider'
-        >
+        <Slider {...settings} className='custom-slider'>
           {listProducts?.map((i, index) => (
             <div>
               <div key={index} className='relative'>
@@ -59,14 +54,20 @@ const CoffeeCarousel = () => {
                   <img
                     className='item-image m-auto absolute bottom-0 left-1/2 -translate-x-1/2'
                     src={i?.image}
+                    alt='coffee-item'
                   ></img>
                 </div>
                 <div className='item-text absolute bottom-2 left-1/2 -translate-x-1/2 w-full'>
-                  <div className='text-center text-white text-[22px] font-medium leading-[33px] capitalize'>
+                  <h3 className='text-center text-white text-[22px] font-medium leading-[33px] capitalize'>
                     {i?.name}
-                  </div>
-                  <div className='item-add text-center text-[15px] text-black-950 capitalize hover:text-saddle_brown-950 cursor-pointer'>
-                    add to order +
+                  </h3>
+                  <div className='item-add text-center text-[15px] text-black-950  cursor-pointer'>
+                    <button
+                      className='capitalize hover:text-saddle_brown-950'
+                      onClick={() => setCart(cart + 1)}
+                    >
+                      add to order +
+                    </button>
                   </div>
                 </div>
               </div>

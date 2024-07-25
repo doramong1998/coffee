@@ -29,20 +29,24 @@ const Logos = () => {
     },
   ];
   return (
-    <div className='mb-[150px]'>
+    <section className='mb-[150px]'>
       <div className='m-auto max-w-[1640px] mb-4 2xl:p-0 xl:p-4'>
         <div className='md:flex gap-[14px]'>
           {listImages?.map((i) => (
             <div>
-              <img src={i?.image} className="md:m-0 m-auto"></img>
+              <img
+                alt='logo-image'
+                src={i?.image}
+                className='md:m-0 m-auto'
+              ></img>
             </div>
           ))}
         </div>
       </div>
       <div className='m-auto md:w-[530px] w-[390px]'>
-        <div className='text-center font-semibold text-[30px] capitalize text-saddle_brown-950 leading-[40px] tracking-[3px] mb-4'>
+        <h2 className='text-center font-semibold text-[30px] capitalize text-saddle_brown-950 leading-[40px] tracking-[3px] mb-4'>
           News as fresh as our coffee
-        </div>
+        </h2>
         <div className='flex border-[3px] border-saddle_brown-950'>
           <input
             className='w-full p-[22px]'
@@ -53,7 +57,7 @@ const Logos = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Logos;
